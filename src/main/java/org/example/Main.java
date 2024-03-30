@@ -7,6 +7,7 @@ import lombok.Setter;
 import org.example.dailies.impl.LengthOfLongestSubarrayWithAtMostKFreq;
 import org.example.dailies.impl.SubArraysWhereMaxAppearsAtLeastKTimes;
 import org.example.dailies.impl.SubArraysWithDifferentKIntegers;
+import org.example.dailies.impl.SubarraysWhereProductLessThanK;
 import org.example.models.ListNode;
 
 import java.util.*;
@@ -16,6 +17,7 @@ import static java.util.Objects.nonNull;
 public class Main {
 
     public static void main(String[] args) {
+        SubarraysWhereProductLessThanK subarraysWhereProductLessThanK = new SubarraysWhereProductLessThanK(); // Day 3 Number 713
         LengthOfLongestSubarrayWithAtMostKFreq lengthOfLongestSubarrayWithAtMostKFreq = new LengthOfLongestSubarrayWithAtMostKFreq(); // Day 4 Number 2958
         SubArraysWhereMaxAppearsAtLeastKTimes subArraysWhereMaxAppearsAtLeastKTimes = new SubArraysWhereMaxAppearsAtLeastKTimes(); // Day 5 Number 2962
         SubArraysWithDifferentKIntegers subArraysWithDifferentKIntegers = new SubArraysWithDifferentKIntegers(); // Day 6 Number 992
@@ -23,9 +25,9 @@ public class Main {
 //        testListNode();
 //        testLongestSubstring();
 //        testSubarrayProduct();
-//        longestSubarrayWithKFreq();
 //        countSubarraysTest();
 
+        subarraysWhereProductLessThanK.start();
         lengthOfLongestSubarrayWithAtMostKFreq.start();
         subArraysWhereMaxAppearsAtLeastKTimes.start();
         subArraysWithDifferentKIntegers.start();
