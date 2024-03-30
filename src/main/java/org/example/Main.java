@@ -1,5 +1,10 @@
 package org.example;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import org.example.dailies.impl.SubArraysWhereMaxAppearsAtLeastKTimes;
 import org.example.dailies.impl.SubArraysWithDifferentKIntegers;
 import org.example.models.ListNode;
 
@@ -10,6 +15,7 @@ import static java.util.Objects.nonNull;
 public class Main {
 
     public static void main(String[] args) {
+        SubArraysWhereMaxAppearsAtLeastKTimes subArraysWhereMaxAppearsAtLeastKTimes = new SubArraysWhereMaxAppearsAtLeastKTimes(); // Day 5 Number 2962
         SubArraysWithDifferentKIntegers subArraysWithDifferentKIntegers = new SubArraysWithDifferentKIntegers(); // Day 6 Number 992
 
 //        testListNode();
@@ -18,6 +24,7 @@ public class Main {
 //        longestSubarrayWithKFreq();
 //        countSubarraysTest();
 
+        subArraysWhereMaxAppearsAtLeastKTimes.start();
         subArraysWithDifferentKIntegers.start();
     }
 

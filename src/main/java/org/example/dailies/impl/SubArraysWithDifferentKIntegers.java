@@ -24,6 +24,7 @@ public class SubArraysWithDifferentKIntegers extends DailyProblemBase {
         int[][] data = {{1, 2, 1, 2, 3}, {1, 2, 1, 3, 4}, {2, 1, 1, 1, 2}};
         int[] data1 = {2, 3, 1};
         int[] expected = {7, 3, 8};
+        System.out.print("\nDay 6 Number 992 - Subarrays with K Different Integers\n");
         for (int i = 0; i < data.length; i++) {
             System.out.printf("Dataset Nº: %d\t Result expected: %d\t Result received: %d\n", i, expected[i], subarraysWithKDistinct(data[i], data1[i]));
         }
