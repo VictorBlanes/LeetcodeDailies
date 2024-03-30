@@ -1,15 +1,6 @@
 package org.example;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
 import org.example.dailies.impl.*;
-import org.example.models.ListNode;
-
-import java.util.*;
-
-import static java.util.Objects.nonNull;
 
 public class Main {
 
