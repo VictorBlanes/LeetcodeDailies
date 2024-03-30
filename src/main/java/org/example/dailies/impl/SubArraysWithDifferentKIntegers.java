@@ -1,4 +1,6 @@
-package org.example.dailies;
+package org.example.dailies.impl;
+
+import org.example.dailies.DailyProblemBase;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -11,12 +13,13 @@ import java.util.Map;
  * Given an integer array nums and an integer k, return the number of good subarrays of nums.
  * A good array is an array where the number of different integers in that array is exactly k.
  **/
-public class SubArraysWithDifferentKIntegers {
+public class SubArraysWithDifferentKIntegers extends DailyProblemBase {
 
 
     public SubArraysWithDifferentKIntegers() {
     }
 
+    @Override
     public void start() {
         int[][] data = {{1, 2, 1, 2, 3}, {1, 2, 1, 3, 4}, {2, 1, 1, 1, 2}};
         int[] data1 = {2, 3, 1};

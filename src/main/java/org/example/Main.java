@@ -1,6 +1,6 @@
 package org.example;
 
-import org.example.dailies.SubArraysWithDifferentKIntegers;
+import org.example.dailies.impl.SubArraysWithDifferentKIntegers;
 import org.example.models.ListNode;
 
 import java.util.*;
@@ -10,12 +10,14 @@ import static java.util.Objects.nonNull;
 public class Main {
 
     public static void main(String[] args) {
+        SubArraysWithDifferentKIntegers subArraysWithDifferentKIntegers = new SubArraysWithDifferentKIntegers(); // Day 6 Number 992
+
 //        testListNode();
 //        testLongestSubstring();
 //        testSubarrayProduct();
 //        longestSubarrayWithKFreq();
 //        countSubarraysTest();
-        SubArraysWithDifferentKIntegers subArraysWithDifferentKIntegers = new SubArraysWithDifferentKIntegers();
+
         subArraysWithDifferentKIntegers.start();
     }
 
