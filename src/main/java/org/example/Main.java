@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.example.dailies.impl.LengthOfLongestSubarrayWithAtMostKFreq;
 import org.example.dailies.impl.SubArraysWhereMaxAppearsAtLeastKTimes;
 import org.example.dailies.impl.SubArraysWithDifferentKIntegers;
 import org.example.models.ListNode;
@@ -15,6 +16,7 @@ import static java.util.Objects.nonNull;
 public class Main {
 
     public static void main(String[] args) {
+        LengthOfLongestSubarrayWithAtMostKFreq lengthOfLongestSubarrayWithAtMostKFreq = new LengthOfLongestSubarrayWithAtMostKFreq(); // Day 4 Number 2958
         SubArraysWhereMaxAppearsAtLeastKTimes subArraysWhereMaxAppearsAtLeastKTimes = new SubArraysWhereMaxAppearsAtLeastKTimes(); // Day 5 Number 2962
         SubArraysWithDifferentKIntegers subArraysWithDifferentKIntegers = new SubArraysWithDifferentKIntegers(); // Day 6 Number 992
 
@@ -24,29 +26,9 @@ public class Main {
 //        longestSubarrayWithKFreq();
 //        countSubarraysTest();
 
+        lengthOfLongestSubarrayWithAtMostKFreq.start();
         subArraysWhereMaxAppearsAtLeastKTimes.start();
         subArraysWithDifferentKIntegers.start();
-    }
-
-    private static void countSubarraysTest() {
-        int[] test = {1, 3, 2, 3, 3};
-        int[] test1 = {61, 23, 38, 23, 56, 40, 82, 56, 82, 82, 82, 70, 8, 69, 8, 7, 19, 14, 58, 42, 82, 10, 82, 78, 15, 82};
-        int[] test2 = {28,5,58,91,24,91,53,9,48,85,16,70,91,91,47,91,61,4,54,61,49};
-        int k = 2;
-        int k1 = 2;
-        int k2 = 1;
-        System.out.println(countSubarrays(test2, k2));
-        System.out.println(countSubarrays2(test2, k2));
-    }
-
-    private static void longestSubarrayWithKFreq() {
-        int[] nums = {5, 5, 5, 5, 5, 5, 5};
-        int[] nums1 = {1};
-        int[] nums2 = {1, 2, 3, 1, 2, 3, 1, 2};
-        int k = 4;
-        int k1 = 1;
-        int k2 = 2;
-        System.out.println(maxSubarrayLength(nums2, k2));
     }
 
     private static void testSubarrayProduct() {
@@ -225,79 +207,5 @@ public class Main {
             accumulated_res += howManyAreMoreThan(nums, start_index + 1, k, start_num * nums[start_index]);
         }
         return accumulated_res;
-    }
-
-    public static int maxSubarrayLength(int[] nums, int k) {
-        int index = 0, starting_index_subarray = 0, longest_subarray = 0;
-        Map<Integer, Integer> map = new HashMap<>();
-
-        while (index < nums.length) {
-            map.put(nums[index], map.getOrDefault(nums[index], 0) + 1);
-            if (map.get(nums[index]) > k) {
-                while (map.get(nums[index]) > k) {
-                    map.put(nums[starting_index_subarray], map.get(nums[starting_index_subarray]) - 1);
-                    starting_index_subarray++;
-                }
-            }
-            longest_subarray = Math.max(index - starting_index_subarray + 1, longest_subarray);
-            index++;
-        }
-        return longest_subarray;
-    }
-
-    public static long countSubarrays(int[] nums, int k) {
-        int max_num = 0, freq = 0, right = 0, left = 0;
-        long num_subarray = 0;
-
-        while (right < nums.length) {
-            if (nums[right] > max_num) {
-                max_num = nums[right];
-                num_subarray = 0;
-                freq = 0;
-                left = 0;
-            }
-
-            if (nums[right] == max_num) {
-                freq++;
-                while (freq >= k) {
-                    if (nums[left] == max_num) {
-                        freq--;
-                    }
-
-                    num_subarray += nums.length - right;
-                    left++;
-                }
-            }
-
-            right++;
-        }
-
-        return num_subarray;
-    }
-
-    public static long countSubarrays2(int[] nums, int k) {
-        long maxNum = Long.MIN_VALUE, count = 0;
-        long left = 0, right = 0, ans = 0;
-
-        // Find the maximum element in the array
-        for (int num : nums) {
-            maxNum = Math.max(maxNum, num);
-        }
-
-        while (right < nums.length || left > right) {
-            if (nums[(int) right] == maxNum) {
-                count++;
-            }
-            // If count is greater than or equal to k, calculate subarrays count
-            while (count >= k) {
-                if (nums[(int) left] == maxNum) {
-                    count--;
-                }
-                left++;
-                ans += nums.length - right;
-            }
-            right++;
-        }
-        return ans;
     }
 }
