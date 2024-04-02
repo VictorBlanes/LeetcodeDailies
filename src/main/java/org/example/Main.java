@@ -13,6 +13,7 @@ public class Main {
         SubArraysWithDifferentKIntegers subArraysWithDifferentKIntegers = new SubArraysWithDifferentKIntegers(); // Day 6 Number 992
         SubarraysWithFixedBound subarraysWithFixedBound = new SubarraysWithFixedBound(); // Day 7 Num 2444
         LengthOfLastWord lengthOfLastWord = new LengthOfLastWord();  // Day 8 Num 58
+        IsomorphicStrings isomorphicStrings = new IsomorphicStrings();  // Day 9 Num 205
 
 
         findAllDuplicatesInArray.start();
@@ -23,5 +24,6 @@ public class Main {
         subArraysWithDifferentKIntegers.start();
         subarraysWithFixedBound.start();
         lengthOfLastWord.start();
+        isomorphicStrings.start();
     }
 }
