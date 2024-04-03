@@ -14,7 +14,7 @@ public class Main {
         SubarraysWithFixedBound subarraysWithFixedBound = new SubarraysWithFixedBound(); // Day 7 Num 2444
         LengthOfLastWord lengthOfLastWord = new LengthOfLastWord();  // Day 8 Num 58
         IsomorphicStrings isomorphicStrings = new IsomorphicStrings();  // Day 9 Num 205
-
+        WordSearch wordSearch = new WordSearch(); // Day 10 Num 79
 
         findAllDuplicatesInArray.start();
         firstMissingPositive.start();
@@ -25,5 +25,6 @@ public class Main {
         subarraysWithFixedBound.start();
         lengthOfLastWord.start();
         isomorphicStrings.start();
+        wordSearch.start();
     }
 }
