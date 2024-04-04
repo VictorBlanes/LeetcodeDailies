@@ -15,6 +15,8 @@ public class Main {
         LengthOfLastWord lengthOfLastWord = new LengthOfLastWord();  // Day 8 Num 58
         IsomorphicStrings isomorphicStrings = new IsomorphicStrings();  // Day 9 Num 205
         WordSearch wordSearch = new WordSearch(); // Day 10 Num 79
+        MaximumNestingDepth maximumNestingDepth = new MaximumNestingDepth(); // Day 11 Num 1614
+
 
         findAllDuplicatesInArray.start();
         firstMissingPositive.start();
@@ -26,5 +28,6 @@ public class Main {
         lengthOfLastWord.start();
         isomorphicStrings.start();
         wordSearch.start();
+        maximumNestingDepth.start();
     }
 }
