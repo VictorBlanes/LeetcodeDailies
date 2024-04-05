@@ -16,6 +16,7 @@ public class Main {
         IsomorphicStrings isomorphicStrings = new IsomorphicStrings();  // Day 9 Num 205
         WordSearch wordSearch = new WordSearch(); // Day 10 Num 79
         MaximumNestingDepth maximumNestingDepth = new MaximumNestingDepth(); // Day 11 Num 1614
+        MakeStringGreat makeStringGreat = new MakeStringGreat(); // Day 12 Num 1544
 
 
         findAllDuplicatesInArray.start();
@@ -29,5 +30,6 @@ public class Main {
         isomorphicStrings.start();
         wordSearch.start();
         maximumNestingDepth.start();
+        makeStringGreat.start();
     }
 }
