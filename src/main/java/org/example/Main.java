@@ -17,7 +17,7 @@ public class Main {
         WordSearch wordSearch = new WordSearch(); // Day 10 Num 79
         MaximumNestingDepth maximumNestingDepth = new MaximumNestingDepth(); // Day 11 Num 1614
         MakeStringGreat makeStringGreat = new MakeStringGreat(); // Day 12 Num 1544
-
+        MinRemoveToMakeValid minRemoveToMakeValid = new MinRemoveToMakeValid(); // Day 13 Num 1249
 
         findAllDuplicatesInArray.start();
         firstMissingPositive.start();
@@ -31,5 +31,6 @@ public class Main {
         wordSearch.start();
         maximumNestingDepth.start();
         makeStringGreat.start();
+        minRemoveToMakeValid.start();
     }
 }
