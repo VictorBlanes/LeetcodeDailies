@@ -10,9 +10,9 @@ public class MinRemoveToMakeValid extends DailyProblemBase {
         String[] data = {"lee(t(c)o)de)", "a)b(c)d", "))(("};
         String[] expected = {"lee(t(c)o)de", "ab(c)d", ""};
         System.out.print("\nDay 13 Number 1249 - Minimum Remove to Make Valid Parentheses\n");
-        for (int i = 0; i < data.length; i++)
+        for (int i = 0; i < data.length; i++) {
             System.out.printf("Dataset Nº: %d\t Result expected: %s\t Result received: %s\n", i, expected[i], minRemoveToMakeValid(data[i]));
-
+        }
     }
 
     private String minRemoveToMakeValid(String s) {

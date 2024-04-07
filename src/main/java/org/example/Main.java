@@ -18,6 +18,7 @@ public class Main {
         MaximumNestingDepth maximumNestingDepth = new MaximumNestingDepth(); // Day 11 Num 1614
         MakeStringGreat makeStringGreat = new MakeStringGreat(); // Day 12 Num 1544
         MinRemoveToMakeValid minRemoveToMakeValid = new MinRemoveToMakeValid(); // Day 13 Num 1249
+        CheckValidParenthesisString checkValidParenthesisString = new CheckValidParenthesisString(); // Day 14 Num 678
 
         findAllDuplicatesInArray.start();
         firstMissingPositive.start();
@@ -32,5 +33,6 @@ public class Main {
         maximumNestingDepth.start();
         makeStringGreat.start();
         minRemoveToMakeValid.start();
+        checkValidParenthesisString.start();
     }
 }
