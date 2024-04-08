@@ -19,6 +19,8 @@ public class Main {
         MakeStringGreat makeStringGreat = new MakeStringGreat(); // Day 12 Num 1544
         MinRemoveToMakeValid minRemoveToMakeValid = new MinRemoveToMakeValid(); // Day 13 Num 1249
         CheckValidParenthesisString checkValidParenthesisString = new CheckValidParenthesisString(); // Day 14 Num 678
+        StudentsUnableToEatLunch studentsUnableToEatLunch = new StudentsUnableToEatLunch(); // Day 15 Num 1700
+
 
         findAllDuplicatesInArray.start();
         firstMissingPositive.start();
@@ -34,5 +36,6 @@ public class Main {
         makeStringGreat.start();
         minRemoveToMakeValid.start();
         checkValidParenthesisString.start();
+        studentsUnableToEatLunch.start();
     }
 }
