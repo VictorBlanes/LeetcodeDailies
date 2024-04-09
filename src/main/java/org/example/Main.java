@@ -20,7 +20,7 @@ public class Main {
         MinRemoveToMakeValid minRemoveToMakeValid = new MinRemoveToMakeValid(); // Day 13 Num 1249
         CheckValidParenthesisString checkValidParenthesisString = new CheckValidParenthesisString(); // Day 14 Num 678
         StudentsUnableToEatLunch studentsUnableToEatLunch = new StudentsUnableToEatLunch(); // Day 15 Num 1700
-
+        TimeToBuyTickets timeToBuyTickets = new TimeToBuyTickets(); // Day 16 Num 2073
 
         findAllDuplicatesInArray.start();
         firstMissingPositive.start();
@@ -37,5 +37,6 @@ public class Main {
         minRemoveToMakeValid.start();
         checkValidParenthesisString.start();
         studentsUnableToEatLunch.start();
+        timeToBuyTickets.start();
     }
 }
