@@ -21,6 +21,7 @@ public class Main {
         CheckValidParenthesisString checkValidParenthesisString = new CheckValidParenthesisString(); // Day 14 Num 678
         StudentsUnableToEatLunch studentsUnableToEatLunch = new StudentsUnableToEatLunch(); // Day 15 Num 1700
         TimeToBuyTickets timeToBuyTickets = new TimeToBuyTickets(); // Day 16 Num 2073
+        RevealCardsInOrder revealCardsInOrder = new RevealCardsInOrder(); // Day 17 Num 950
 
         findAllDuplicatesInArray.start();
         firstMissingPositive.start();
@@ -38,5 +39,6 @@ public class Main {
         checkValidParenthesisString.start();
         studentsUnableToEatLunch.start();
         timeToBuyTickets.start();
+        revealCardsInOrder.start();
     }
 }
