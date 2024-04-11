@@ -22,6 +22,8 @@ public class Main {
         StudentsUnableToEatLunch studentsUnableToEatLunch = new StudentsUnableToEatLunch(); // Day 15 Num 1700
         TimeToBuyTickets timeToBuyTickets = new TimeToBuyTickets(); // Day 16 Num 2073
         RevealCardsInOrder revealCardsInOrder = new RevealCardsInOrder(); // Day 17 Num 950
+        RemoveKDigits removeKDigits = new RemoveKDigits(); // Day 18 Num 402
+
 
         findAllDuplicatesInArray.start();
         firstMissingPositive.start();
@@ -40,5 +42,6 @@ public class Main {
         studentsUnableToEatLunch.start();
         timeToBuyTickets.start();
         revealCardsInOrder.start();
+        removeKDigits.start();
     }
 }
