@@ -2,16 +2,17 @@ package org.example;
 
 import org.example.dailies.impl.*;
 
-import static java.util.Objects.nonNull;
-
 public class Main {
 
     public static void main(String[] args) {
-//        days1to10();
-//        days11to20();
+        days1to10();
+        days11to20();
         SumRootLeftNumbers sumRootLeftNumbers = new SumRootLeftNumbers();
+        AddRowToTree addRowToTree = new AddRowToTree();
+
 
         sumRootLeftNumbers.start();
+        addRowToTree.start();
     }
 
     private static void days1to10() {
