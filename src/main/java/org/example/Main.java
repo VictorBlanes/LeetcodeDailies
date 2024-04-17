@@ -9,10 +9,11 @@ public class Main {
         days11to20();
         SumRootLeftNumbers sumRootLeftNumbers = new SumRootLeftNumbers();
         AddRowToTree addRowToTree = new AddRowToTree();
-
+        SmallestStringFromLeaf smallestStringFromLeaf = new SmallestStringFromLeaf();
 
         sumRootLeftNumbers.start();
         addRowToTree.start();
+        smallestStringFromLeaf.start();
     }
 
     private static void days1to10() {
